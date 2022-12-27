@@ -9,7 +9,7 @@ export default class BoardPresenter {
 
   constructor({ boardContainer }) {
     this.boardContainer = boardContainer;
-    }
+  }
 
   init() {
     render(this.boardComponent, this.boardContainer);
@@ -23,5 +23,5 @@ export default class BoardPresenter {
     // }
 
 
-    }
+  }
 }
