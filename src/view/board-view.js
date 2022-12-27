@@ -1,7 +1,7 @@
 import { createElement } from '../render.js';
 
 function createBoardTemplate() {
-    return (`
+  return (`
     <main class="page-body__page-main  page-main">
     <div class="page-body__container">
       <section class="trip-events">
@@ -11,23 +11,23 @@ function createBoardTemplate() {
     </div>
     </main>
         
-        `);
+     `);
 }
 
 export default class BoardView {
-    getTemplate() {
-        return createBoardTemplate();
+  getTemplate() {
+    return createBoardTemplate();
+  }
+
+  getElement() {
+    if (!this.element) {
+      this.element = createElement(this.getTemplate());
     }
 
-    getElement() {
-        if (!this.element) {
-            this.element = createElement(this.getTemplate());
-        }
+    return this.element;
+  }
 
-        return this.element;
-    }
-
-    removeElement() {
-        this.element = null;
-    }
+  removeElement() {
+    this.element = null;
+  }
 }
