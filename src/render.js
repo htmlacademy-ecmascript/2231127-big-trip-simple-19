@@ -5,6 +5,7 @@ const RenderPosition = {
   AFTEREND: 'afterend',
 };
 
+
 function createElement(template) {
   const newElement = document.createElement('div');
   newElement.innerHTML = template;
@@ -17,3 +18,5 @@ function render(component, container, place = RenderPosition.BEFOREEND) {
 }
 
 export {RenderPosition, createElement, render};
+
+//добавляю комментарий в ветке new
