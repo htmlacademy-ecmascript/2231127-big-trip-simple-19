@@ -11,3 +11,7 @@ function getDiet(x) {
 }
 
 getDiet(ARRAY);
+
+const x = (y, z) => y + z;
+
+x(432, 5345);
